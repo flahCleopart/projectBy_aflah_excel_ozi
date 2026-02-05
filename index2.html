@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Konsultasi Dokter</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1f2a30;
+            color: white;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #1e88e5;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        section {
+            padding-top: 100px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 140px 20px 60px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .hero p {
+            color: #cfd8dc;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            background-color: #1e88e5;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* GAMBAR TENGAH */
+        .gambar-tengah {
+            text-align: center;
+            padding: 30px 20px 10px;
+        }
+
+        .gambar-tengah img {
+            width: 260px;
+            max-width: 90%;
+            border-radius: 12px; /* opsional, biar halus */
+        }
+
+        /* LAYANAN */
+        #dokter h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .fitur {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #111;
+            padding: 25px;
+            width: 240px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        .card p {
+            color: #b0bec5;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1e88e5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">DokterCare</div>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#dokter">Dokter</a>
+        <a href="#konsultasi">Konsultasi</a>
+        <a href="#login">Login</a>
+    </nav>
+</header>
+
+<!-- BERANDA -->
+<section id="beranda" class="hero">
+    <h1>Konsultasi Dokter Online</h1>
+    <p>Mudah, cepat, dan aman tanpa harus ke rumah sakit</p>
+    <button onclick="keKonsultasi()">Mulai Konsultasi</button>
+</section>
+
+<!-- GAMBAR DI TENGAH (AREA YANG DILINGKARI) -->
+<section class="gambar-tengah">
+    <img src="./img/IMG_20250929_193101_773.webp" alt="Dokter Online">
+</section>
+
+<!-- LAYANAN DOKTER -->
+<section id="dokter">
+    <h2>Layanan Dokter</h2>
+    <div class="fitur">
+        <div class="card">
+            <h3>Chat Dokter</h3>
+            <p>Konsultasi langsung via chat</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 DokterCare</p>
+</footer>
+
+<script>
+    function keKonsultasi() {
+        location.href = "chatnew.html";
+    }
+</script>
+
+</body>
+</html>
